@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Hello World IT Telkom Purwokerto</string>
+    <string name="lbl_name">Nama Mahasiswa</string>
+    <string name="my_name">Rifqi Alfinnur C</string>
+    <string name="lbl_nim">Nim Mahasiswa</string>
+    <string name="my_nim">19104031</string>
+    <string name="ganti_halaman">Ganti Halaman</string>
+</resources>
