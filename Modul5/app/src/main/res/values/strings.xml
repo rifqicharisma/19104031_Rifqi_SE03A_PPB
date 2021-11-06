@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Modul 5</string>
+    <string name="hint_input_prodi">input prodi</string>
+    <string name="btn_prodi">BAWA DATA PRODI KE ACTIVITY LAIN</string>
+</resources>
