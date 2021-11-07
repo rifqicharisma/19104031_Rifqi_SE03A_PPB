@@ -2,4 +2,7 @@
     <string name="app_name">Modul 5</string>
     <string name="hint_input_prodi">input prodi</string>
     <string name="btn_prodi">BAWA DATA PRODI KE ACTIVITY LAIN</string>
+    <string name="btn_call_browser">PANGGIL WEB ITTP</string>
+    <string name="btn_call_camera">PANGGIL KAMERA</string>
+    <string name="btn_call_phone">TELEPON</string>
 </resources>
