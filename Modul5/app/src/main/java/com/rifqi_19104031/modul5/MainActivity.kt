@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnCallCamera : Button
     private lateinit var inputPhoneNumber : EditText
     private lateinit var btnCallPhone : Button
+    private lateinit var btnFragment : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,7 +43,7 @@ class MainActivity : AppCompatActivity() {
 //            intent.putExtras(bundle)
 //            startActivity(intent)
 
-        // menmabahkan fungsi untuk button prodi
+        // menambahkan fungsi untuk button prodi
         btnProdi.setOnClickListener {
             val namaProdi = inputProdi.text.toString()
             if (namaProdi.isEmpty()) {
@@ -81,6 +82,12 @@ class MainActivity : AppCompatActivity() {
 
         // memanggil fungsi user permission
         setupPermissions()
+
+        // menambahkan fungsi untuk tombol fragment
+        btnFragment.setOnClickListener{
+            val intent = Intent(this, Pratice5ForFragmentActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 
