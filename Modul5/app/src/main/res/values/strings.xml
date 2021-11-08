@@ -12,4 +12,6 @@
     <string name="input_nama">Masukkan Nama</string>
     <string name="input_nim">Masukkan Nim</string>
     <string name="btn_to_second_fragment">Pindah Fragment Kedua</string>
+    <string name="fragment_second">Ini halaman fragment kedua</string>
+    <string name="btn_kembali_beranda">KEMBALI</string>
 </resources>
