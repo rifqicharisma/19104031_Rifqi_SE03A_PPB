@@ -12,6 +12,7 @@ class MainActivityReadData : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_read_data)
 
+        // inisiasi view
         lblProdiSaya = findViewById(R.id.lblProdiSaya)
 
 //        if(intent.extras != null){

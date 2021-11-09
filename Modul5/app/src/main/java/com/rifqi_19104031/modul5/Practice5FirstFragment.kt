@@ -45,6 +45,7 @@ class Practice5FirstFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         btnToSecondFragment.setOnClickListener{
             val namaSaya = inputNamaSaya.text.toString()
             if (namaSaya.isEmpty()) {

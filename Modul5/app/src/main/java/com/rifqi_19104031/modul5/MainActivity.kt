@@ -43,6 +43,16 @@ class MainActivity : AppCompatActivity() {
 //            intent.putExtras(bundle)
 //            startActivity(intent)
 
+        // inisiasi find view
+        inputProdi = findViewById(R.id.inputProdi)
+        inputPhoneNumber = findViewById(R.id.inputPhoneNumber)
+
+        btnProdi = findViewById(R.id.btnProdi)
+        btnCallBrowser = findViewById(R.id.btnCallBrowser)
+        btnCallCamera = findViewById(R.id.btnCallCamera)
+        btnCallPhone = findViewById(R.id.btnCallPhone)
+        btnFragment = findViewById(R.id.btnFragment)
+
         // menambahkan fungsi untuk button prodi
         btnProdi.setOnClickListener {
             val namaProdi = inputProdi.text.toString()
