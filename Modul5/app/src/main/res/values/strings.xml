@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Modul 5</string>
+    <string name="hint_input_prodi">input prodi</string>
+    <string name="btn_prodi">BAWA DATA PRODI KE ACTIVITY LAIN</string>
+    <string name="btn_call_browser">PANGGIL WEB ITTP</string>
+    <string name="btn_call_camera">PANGGIL KAMERA</string>
+    <string name="btn_call_phone">TELEPON</string>
+    <string name="btn_fragment">BUKA FRAGMENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_first">Fragment Pertama</string>
+    <string name="input_nama">Masukkan Nama</string>
+    <string name="input_nim">Masukkan Nim</string>
+    <string name="btn_to_second_fragment">Pindah Fragment Kedua</string>
+    <string name="fragment_second">Ini halaman fragment kedua</string>
+    <string name="btn_kembali_beranda">KEMBALI</string>
+</resources>
