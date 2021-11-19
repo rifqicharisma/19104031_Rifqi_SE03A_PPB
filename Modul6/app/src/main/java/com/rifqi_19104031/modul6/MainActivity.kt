@@ -3,7 +3,9 @@ package com.rifqi_19104031.modul6
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.rifqi_19104031.modul6.databinding.ActivityMainBinding
+import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -27,9 +29,9 @@ class MainActivity : AppCompatActivity() {
         val listMyData = ArrayList<MyData>()
         for (position in dataName.indices) {
             val myData = MyData(
-                dataName[position],
-                dataDescription[position],
-                dataPhoto[position]
+                    dataName[position],
+                    dataDescription[position],
+                    dataPhoto[position]
             )
             listMyData.add(myData)
         }
@@ -42,6 +44,5 @@ class MainActivity : AppCompatActivity() {
             val listMyDataAdapter = MainAdapter(list)
             rv_pariwisata.adapter = listMyDataAdapter
         }
-    }
     }
 }

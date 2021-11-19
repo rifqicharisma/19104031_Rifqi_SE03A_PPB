@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp"
+    android:padding="10dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <ImageView
-        android:id="@+id/tv_pariwisata"
+        android:id="@+id/iv_pariwisata"
         android:layout_width="55dp"
         android:layout_height="55dp"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,21 +23,20 @@
         android:layout_marginStart="20dp"
         android:textSize="14sp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tv_nama_pariwisata"
-        app:layout_constraintStart_toEndOf="@id/tv_pariwisata"
-        />
+        app:layout_constraintBottom_toTopOf="@id/tv_deskripsi_pariwisata"
+        app:layout_constraintStart_toEndOf="@id/iv_pariwisata"/>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_deskripsi_pariwisata"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginStart="20dp"
-        android:ellipsize="end"
+        android:text="Sebuah pariwisata di kota tersebut yang bla bla bla"
         android:maxLines="2"
-        android:text="Deskripsi"
+        android:ellipsize="end"
         android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/tv_pariwisata"
-        app:layout_constraintTop_toBottomOf="@id/tv_nama_pariwisata" />
+        app:layout_constraintStart_toEndOf="@id/iv_pariwisata"
+        app:layout_constraintTop_toBottomOf="@id/tv_nama_pariwisata"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
