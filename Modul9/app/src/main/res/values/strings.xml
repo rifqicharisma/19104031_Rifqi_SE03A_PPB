@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Modul9</string>
+    <string name="name">Nama</string>
+    <string name="default_name">No Nama</string>
+    <string name="email">Email</string>
+    <string name="default_email">No Email</string>
+    <string name="phone">Phone Number</string>
+    <string name="default_phone">No Phone Number</string>
+    <string name="age">Umur</string>
+    <string name="default_age">No Age</string>
+    <string name="tv_theme">Theme Mode</string>
+    <string name="default_theme">System Default</string>
+    <string name="setting">Setting</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="dark_theme">Tema Gelap</string>
+    <string name="phone_number">Nomor Telp</string>
+</resources>
