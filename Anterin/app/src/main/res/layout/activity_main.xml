@@ -7,12 +7,98 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_temukan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="16dp"
+        android:text="TEMUKAN KEBUTUHAN"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/tv_harianmu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HARIANMU DI SINI"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/tv_temukan"
+        app:layout_constraintTop_toBottomOf="@+id/tv_temukan" />
+
+    <ImageView
+        android:id="@+id/iv_notification"
+        android:layout_width="36dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_harianmu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.757"
+        app:layout_constraintStart_toEndOf="@+id/tv_temukan"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_notifications_24" />
+
+    <ImageView
+        android:id="@+id/iv_fruit"
+        android:layout_width="111dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_harianmu"
+        app:layout_constraintTop_toBottomOf="@+id/tv_harianmu"
+        tools:srcCompat="@tools:sample/avatars"/>
+
+    <TextView
+        android:id="@+id/tv_fruit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fruit & "
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/iv_fruit"
+        app:layout_constraintStart_toStartOf="@+id/iv_fruit" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vegetable"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_fruit"
+        app:layout_constraintEnd_toEndOf="@+id/iv_fruit"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="@+id/iv_fruit" />
+
+    <SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="340dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_notification"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_harianmu"
+        app:layout_constraintTop_toBottomOf="@+id/iv_fruit" />
+
+    <TextView
+        android:id="@+id/tv_rekomendasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Rekomendasi"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/search_bar"
+        app:layout_constraintTop_toBottomOf="@+id/search_bar" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Untukmu"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/tv_rekomendasi"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rekomendasi" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
