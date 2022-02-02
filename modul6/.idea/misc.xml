@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/KULIAH/SEMESTER 5/PEMROGRAMAN PERANGKAT BERGERAK/Praktikum/modul6/app/src/main/res/layout/activity_detail.xml" value="0.18342391304347827" />
+        <entry key="..\:/KULIAH/SEMESTER 5/PEMROGRAMAN PERANGKAT BERGERAK/Praktikum/modul6/app/src/main/res/layout/activity_main.xml" value="0.18342391304347827" />
+        <entry key="..\:/KULIAH/SEMESTER 5/PEMROGRAMAN PERANGKAT BERGERAK/Praktikum/modul6/app/src/main/res/layout/activity_maps.xml" value="0.2595108695652174" />
+        <entry key="..\:/KULIAH/SEMESTER 5/PEMROGRAMAN PERANGKAT BERGERAK/Praktikum/modul6/app/src/main/res/layout/content_scrolling.xml" value="0.2713541666666667" />
+        <entry key="..\:/KULIAH/SEMESTER 5/PEMROGRAMAN PERANGKAT BERGERAK/Praktikum/modul6/app/src/main/res/layout/item_cardview.xml" value="0.18342391304347827" />
+        <entry key="..\:/KULIAH/SEMESTER 5/PEMROGRAMAN PERANGKAT BERGERAK/Praktikum/modul6/app/src/main/res/layout/item_grid.xml" value="0.18342391304347827" />
+        <entry key="..\:/KULIAH/SEMESTER 5/PEMROGRAMAN PERANGKAT BERGERAK/Praktikum/modul6/app/src/main/res/layout/item_list.xml" value="0.18342391304347827" />
+        <entry key="..\:/KULIAH/SEMESTER 5/PEMROGRAMAN PERANGKAT BERGERAK/Praktikum/modul6/app/src/main/res/layout/menu.xml" value="0.18342391304347827" />
+        <entry key="..\:/KULIAH/SEMESTER 5/PEMROGRAMAN PERANGKAT BERGERAK/Praktikum/modul6/app/src/main/res/menu/menu.xml" value="0.25729166666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
