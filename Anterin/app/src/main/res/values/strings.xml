@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Anterin</string>
+    <string name="history">profil</string>
+    <string name="profil">profil</string>
+    <string name="Profil">Profil</string>
+    <string name="fatimah_aul">Fatimah Aulia</string>
+    <string name="some_id">+62 81234567890</string>
+    <string name="murriverie_">Purwokerto</string>
+    <string name="status_peng">Status Pengiriman</string>
+    <string name="akun_saya">Pengaturan</string>
+    <string name="bantuan">Bantuan</string>
+    <string name="tentang">Tentang</string>
 </resources>

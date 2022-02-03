@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="profil">profil</style>
+    <style name="fatimah_aul">Fatimah Aulia</style>
+    <style name="some_id">+62 81234567890</style>
+    <style name="murriverie_">Purwokerto</style>
+    <style name="status_peng">Status Pengiriman</style>
+    <style name="akun_saya">Pengaturan</style>
+    <style name="bantuan">Bantuan</style>
+    <style name="tentang">Tentang</style>
+</resources>

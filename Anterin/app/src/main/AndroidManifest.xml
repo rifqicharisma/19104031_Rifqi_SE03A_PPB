@@ -9,12 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Anterin">
+        <activity android:name=".profil"></activity>
         <activity
             android:name=".Pembayaran"
             android:exported="false" />
         <activity
-        android:name=".DetailProduk"
-        android:exported="false" />
+            android:name=".DetailProduk"
+            android:exported="false" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
