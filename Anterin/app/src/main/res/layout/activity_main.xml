@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<!--    temukan kebutuhan harian-->
     <TextView
         android:id="@+id/tv_temukan"
         android:layout_width="wrap_content"
@@ -13,6 +14,7 @@
         android:layout_marginStart="16dp"
         android:text="TEMUKAN KEBUTUHAN"
         android:textColor="#000000"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -26,9 +28,11 @@
         android:layout_height="wrap_content"
         android:text="HARIANMU DI SINI"
         android:textColor="#000000"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/tv_temukan"
         app:layout_constraintTop_toBottomOf="@+id/tv_temukan" />
 
+<!--    icon notifikasi-->
     <ImageView
         android:id="@+id/iv_notification"
         android:layout_width="36dp"
@@ -42,6 +46,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_notifications_24" />
 
+    <!--    kategori 1-->
     <ImageView
         android:id="@+id/iv_fruit"
         android:layout_width="111dp"
@@ -52,25 +57,98 @@
         tools:srcCompat="@tools:sample/avatars"/>
 
     <TextView
-        android:id="@+id/tv_fruit"
+        android:id="@+id/tv_atas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fruit & "
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        android:text="Fruit"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tv_bawah"
         app:layout_constraintEnd_toEndOf="@+id/iv_fruit"
         app:layout_constraintStart_toStartOf="@+id/iv_fruit" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tv_bawah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Vegetable"
+        android:textSize="12dp"
+        android:textColor="@color/black"
         android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/iv_fruit"
         app:layout_constraintEnd_toEndOf="@+id/iv_fruit"
         app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="@+id/iv_fruit" />
 
+    <!--    kategori 2-->
+    <ImageView
+        android:id="@+id/iv_fruit2"
+        android:layout_width="111dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_fruit"
+        app:layout_constraintTop_toTopOf="@+id/iv_fruit"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_atas2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fruit"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tv_bawah"
+        app:layout_constraintEnd_toEndOf="@+id/iv_fruit2"
+        app:layout_constraintStart_toStartOf="@+id/iv_fruit2" />
+
+    <TextView
+        android:id="@+id/tv_bawah2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vegetable"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_fruit2"
+        app:layout_constraintEnd_toEndOf="@+id/iv_fruit2"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="@+id/iv_fruit2" />
+
+    <!--    kategori 3-->
+    <ImageView
+        android:id="@+id/iv_fruit3"
+        android:layout_width="111dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_fruit2"
+        app:layout_constraintTop_toTopOf="@+id/iv_fruit2"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_atas3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fruit"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tv_bawah3"
+        app:layout_constraintEnd_toEndOf="@+id/iv_fruit3"
+        app:layout_constraintStart_toStartOf="@+id/iv_fruit3" />
+
+    <TextView
+        android:id="@+id/tv_bawah3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vegetable"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_fruit3"
+        app:layout_constraintEnd_toEndOf="@+id/iv_fruit3"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="@+id/iv_fruit3" />
+
+<!--    search bar-->
     <SearchView
         android:id="@+id/search_bar"
         android:layout_width="340dp"
@@ -81,6 +159,7 @@
         app:layout_constraintStart_toStartOf="@+id/tv_harianmu"
         app:layout_constraintTop_toBottomOf="@+id/iv_fruit" />
 
+    <!--    rekomendasi untukmu-->
     <TextView
         android:id="@+id/tv_rekomendasi"
         android:layout_width="wrap_content"
@@ -88,6 +167,7 @@
         android:layout_marginTop="40dp"
         android:text="Rekomendasi"
         android:textColor="#000000"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/search_bar"
         app:layout_constraintTop_toBottomOf="@+id/search_bar" />
 
@@ -97,9 +177,11 @@
         android:layout_height="wrap_content"
         android:text="Untukmu"
         android:textColor="#000000"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/tv_rekomendasi"
         app:layout_constraintTop_toBottomOf="@+id/tv_rekomendasi" />
 
+<!--    katalog produk 1-->
     <ImageView
         android:id="@+id/iv_produk1"
         android:layout_width="wrap_content"
@@ -114,12 +196,318 @@
         android:id="@+id/tv_namaProduk1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="80dp"
+        android:textAlignment="center"
         android:text="GoodMood"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/iv_produk1"
-        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="@+id/iv_produk1"
         app:layout_constraintTop_toTopOf="@+id/iv_produk1" />
 
+    <TextView
+        android:id="@+id/tv_harga1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp 5000"
+        android:textColor="@color/black"
+        android:textSize="9dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_namaProduk1"
+        app:layout_constraintStart_toStartOf="@+id/tv_namaProduk1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_namaProduk1" />
 
+    <TextView
+        android:id="@+id/tv_toko1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eka Surya"
+        android:textColor="@color/black"
+        android:textSize="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_harga1"
+        app:layout_constraintStart_toStartOf="@+id/tv_harga1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_harga1" />
+
+    <ImageView
+        android:id="@+id/iv_bintang1"
+        android:layout_width="42dp"
+        android:layout_height="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_produk1"
+        app:layout_constraintEnd_toEndOf="@+id/iv_produk1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iv_produk1"
+        app:srcCompat="@drawable/bintang" />
+
+    <ImageView
+        android:id="@+id/iv_freeShipping1"
+        android:layout_width="22dp"
+        android:layout_height="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_produk1"
+        app:layout_constraintEnd_toEndOf="@+id/iv_produk1"
+        app:srcCompat="@drawable/free_shipping" />
+
+<!--    kalatog produk 2-->
+    <ImageView
+        android:id="@+id/iv_produk2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/iv_produk1"
+        app:layout_constraintTop_toBottomOf="@+id/iv_produk1"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_namaProduk2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textAlignment="center"
+        android:text="GoodMood"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/iv_produk2"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/iv_produk2"
+        app:layout_constraintTop_toTopOf="@+id/iv_produk2" />
+
+    <TextView
+        android:id="@+id/tv_harga2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp 5000"
+        android:textColor="@color/black"
+        android:textSize="9dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_namaProduk2"
+        app:layout_constraintStart_toStartOf="@+id/tv_namaProduk2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_namaProduk2" />
+
+    <TextView
+        android:id="@+id/tv_toko2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eka Surya"
+        android:textColor="@color/black"
+        android:textSize="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_harga2"
+        app:layout_constraintStart_toStartOf="@+id/tv_harga2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_harga2" />
+
+    <ImageView
+        android:id="@+id/iv_bintang2"
+        android:layout_width="42dp"
+        android:layout_height="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_produk2"
+        app:layout_constraintEnd_toEndOf="@+id/iv_produk2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iv_produk2"
+        app:srcCompat="@drawable/bintang" />
+
+    <ImageView
+        android:id="@+id/iv_freeShipping2"
+        android:layout_width="22dp"
+        android:layout_height="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_produk2"
+        app:layout_constraintEnd_toEndOf="@+id/iv_produk2"
+        app:srcCompat="@drawable/free_shipping" />
+
+<!--    katalog produk 3-->
+    <ImageView
+        android:id="@+id/iv_produk3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/search_bar"
+        app:layout_constraintTop_toBottomOf="@+id/search_bar"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_namaProduk3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textAlignment="center"
+        android:text="GoodMood"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/iv_produk3"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/iv_produk3"
+        app:layout_constraintTop_toTopOf="@+id/iv_produk3" />
+
+    <TextView
+        android:id="@+id/tv_harga3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp 5000"
+        android:textColor="@color/black"
+        android:textSize="9dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_namaProduk3"
+        app:layout_constraintStart_toStartOf="@+id/tv_namaProduk3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_namaProduk3" />
+
+    <TextView
+        android:id="@+id/tv_toko3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eka Surya"
+        android:textColor="@color/black"
+        android:textSize="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_harga3"
+        app:layout_constraintStart_toStartOf="@+id/tv_harga3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_harga3" />
+
+    <ImageView
+        android:id="@+id/iv_bintang3"
+        android:layout_width="42dp"
+        android:layout_height="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_produk3"
+        app:layout_constraintEnd_toEndOf="@+id/iv_produk3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iv_produk3"
+        app:srcCompat="@drawable/bintang" />
+
+    <ImageView
+        android:id="@+id/iv_freeShipping3"
+        android:layout_width="22dp"
+        android:layout_height="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_produk3"
+        app:layout_constraintEnd_toEndOf="@+id/iv_produk3"
+        app:srcCompat="@drawable/free_shipping" />
+
+<!--    katalog produk 4-->
+    <ImageView
+        android:id="@+id/iv_produk4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/iv_produk3"
+        app:layout_constraintTop_toBottomOf="@+id/iv_produk3"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_namaProduk4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textAlignment="center"
+        android:text="GoodMood"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/iv_produk4"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/iv_produk4"
+        app:layout_constraintTop_toTopOf="@+id/iv_produk4" />
+
+    <TextView
+        android:id="@+id/tv_harga4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp 5000"
+        android:textColor="@color/black"
+        android:textSize="9dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_namaProduk4"
+        app:layout_constraintStart_toStartOf="@+id/tv_namaProduk4"
+        app:layout_constraintTop_toBottomOf="@+id/tv_namaProduk4" />
+
+    <TextView
+        android:id="@+id/tv_toko4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eka Surya"
+        android:textColor="@color/black"
+        android:textSize="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_harga4"
+        app:layout_constraintStart_toStartOf="@+id/tv_harga4"
+        app:layout_constraintTop_toBottomOf="@+id/tv_harga4" />
+
+    <ImageView
+        android:id="@+id/iv_bintang4"
+        android:layout_width="42dp"
+        android:layout_height="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_produk4"
+        app:layout_constraintEnd_toEndOf="@+id/iv_produk4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iv_produk4"
+        app:srcCompat="@drawable/bintang" />
+
+    <ImageView
+        android:id="@+id/iv_freeShipping4"
+        android:layout_width="22dp"
+        android:layout_height="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_produk4"
+        app:layout_constraintEnd_toEndOf="@+id/iv_produk4"
+        app:srcCompat="@drawable/free_shipping" />
+
+<!--    katalog produk 5-->
+    <ImageView
+        android:id="@+id/iv_produk5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/iv_produk4"
+        app:layout_constraintTop_toBottomOf="@+id/iv_produk4"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_namaProduk5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textAlignment="center"
+        android:text="GoodMood"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/iv_produk5"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/iv_produk5"
+        app:layout_constraintTop_toTopOf="@+id/iv_produk5" />
+
+    <TextView
+        android:id="@+id/tv_harga5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp 5000"
+        android:textColor="@color/black"
+        android:textSize="9dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_namaProduk5"
+        app:layout_constraintStart_toStartOf="@+id/tv_namaProduk5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_namaProduk5" />
+
+    <TextView
+        android:id="@+id/tv_toko5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eka Surya"
+        android:textColor="@color/black"
+        android:textSize="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_harga5"
+        app:layout_constraintStart_toStartOf="@+id/tv_harga5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_harga5" />
+
+    <ImageView
+        android:id="@+id/iv_bintang5"
+        android:layout_width="42dp"
+        android:layout_height="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_produk5"
+        app:layout_constraintEnd_toEndOf="@+id/iv_produk5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iv_produk5"
+        app:srcCompat="@drawable/bintang" />
+
+    <ImageView
+        android:id="@+id/iv_freeShipping5"
+        android:layout_width="22dp"
+        android:layout_height="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_produk5"
+        app:layout_constraintEnd_toEndOf="@+id/iv_produk5"
+        app:srcCompat="@drawable/free_shipping" />
 </androidx.constraintlayout.widget.ConstraintLayout>
