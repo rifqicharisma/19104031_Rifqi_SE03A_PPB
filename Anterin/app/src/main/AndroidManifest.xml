@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Anterin">
         <activity
+            android:name=".promosi"
+            android:exported="false" />
+        <activity
             android:name=".Pembayaran"
             android:exported="false" />
         <activity
