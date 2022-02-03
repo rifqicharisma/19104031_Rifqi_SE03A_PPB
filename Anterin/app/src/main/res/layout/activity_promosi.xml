@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    tools:context=".promosi">
+
+    <!--  Banner  -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:src="@drawable/bg_promosi"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <!--  Banner  -->
+
+    <!--  Keterangan Toko  -->
+
+    <RelativeLayout
+        android:id="@+id/keteranganTokoSection"
+        android:layout_width="340dp"
+        android:layout_height="160dp"
+        android:background="#FFF"
+        android:padding="20dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView">
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:id="@+id/namaTokoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eka Surya Swalayan - Purwokerto Selatan"
+            android:textColor="@color/black"
+            android:textSize="16dp">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/markerMapToko"
+            android:layout_below="@id/namaTokoText"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/location"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/namaTokoText"
+            android:layout_alignBaseline="@id/markerMapToko"
+            android:layout_toRightOf="@id/markerMapToko"
+            android:text="600 M"
+            android:textSize="12dp"
+            android:textStyle="bold"></TextView>
+
+        <!--  Garis pembatas  -->
+
+        <View
+            android:layout_marginTop="8dp"
+            android:id="@+id/garisPembatas1"
+            android:layout_below="@id/markerMapToko"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <!--  Garis pembatas  -->
+
+        <TextView
+            android:id="@+id/alamatTokoText"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/garisPembatas1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:text="Jl. Kyai H. Wahid Hasim, Windusara, Karangklesem, Kec. Purwokerto Selatan, Kabupaten Banyumas, Jawa Tengah 53144"
+            ></TextView>
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/alamatTokoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:text="Buka Jam 09.00 - 21.00"
+            android:textStyle="bold"
+            ></TextView>
+
+    </RelativeLayout>
+
+    <!--  Keterangan Toko  -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/keteranganTokoSection"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="40dp"
+            >
+
+            <!--  Promosi Minggu Ini Text  -->
+            <TextView
+                android:id="@+id/prmosiMingguIniText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Promosi Minggu Ini"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold">
+
+            </TextView>
+            <!--  Promosi Minggu Ini Text  -->
+
+            <!--  Produk 1  -->
+            <RelativeLayout
+                android:id="@+id/produk1"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/prmosiMingguIniText"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:padding="10dp"
+                android:background="#FFF"
+                >
+
+                <ImageView
+                    android:id="@+id/gbProduk1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:src="@drawable/produk1"></ImageView>
+
+                <TextView
+                    android:id="@+id/namaProduk1"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gbProduk1"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="Nissin Wafer 570 G"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/hargaProduk1"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/namaProduk1"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:text="Rp 33.800"
+                    android:textSize="11dp"></TextView>
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_below="@+id/hargaProduk1"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="wrap_content"
+                    android:background="#A91515"
+                    android:textColor="@color/white"
+                    android:text="Tambah"></Button>
+
+            </RelativeLayout>
+            <!--  Produk 1  -->
+
+            <!--  Produk 2  -->
+            <RelativeLayout
+                android:id="@+id/produk2"
+                android:layout_below="@+id/prmosiMingguIniText"
+                android:layout_marginTop="10dp"
+                android:layout_alignBaseline="@id/produk1"
+                android:layout_alignParentEnd="true"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:padding="10dp"
+                android:background="#FFF"
+                >
+
+                <ImageView
+                    android:id="@+id/gbProduk2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:src="@drawable/produk2"></ImageView>
+
+                <TextView
+                    android:id="@+id/namaProduk2"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gbProduk2"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="Cimory Squeeze"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/hargaProduk2"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/namaProduk2"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:text="Rp 8.000"
+                    android:textSize="11dp"></TextView>
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_below="@+id/hargaProduk2"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="#A91515"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Tambah"></Button>
+
+            </RelativeLayout>
+            <!--  Produk 2  -->
+
+            <!--  Produk 3  -->
+            <RelativeLayout
+                android:id="@+id/produk3"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/produk1"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:padding="10dp"
+                android:background="#FFF"
+                >
+
+                <ImageView
+                    android:id="@+id/gbProduk3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:src="@drawable/produk3"></ImageView>
+
+                <TextView
+                    android:id="@+id/namaProduk3"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gbProduk3"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="Nissin Wafer 570 G"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/hargaProduk3"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/namaProduk3"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:text="Rp 33.800"
+                    android:textSize="11dp"></TextView>
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_below="@+id/hargaProduk3"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="#A91515"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Tambah"></Button>
+
+            </RelativeLayout>
+            <!--  Produk 3  -->
+
+            <!--  Produk 4  -->
+            <RelativeLayout
+                android:layout_below="@+id/produk2"
+                android:layout_marginTop="10dp"
+                android:layout_alignBaseline="@id/produk3"
+                android:layout_alignParentEnd="true"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:padding="10dp"
+                android:background="#FFF"
+                >
+
+                <ImageView
+                    android:id="@+id/gbProduk4"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:src="@drawable/produk4"></ImageView>
+
+                <TextView
+                    android:id="@+id/namaProduk4"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gbProduk4"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="Cimory Squeeze"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/hargaProduk4"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/namaProduk4"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:text="Rp 8.000"
+                    android:textSize="11dp"></TextView>
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_below="@+id/hargaProduk4"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="#A91515"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Tambah"></Button>
+
+            </RelativeLayout>
+            <!--  Produk 2  -->
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
