@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/19104031_Rifqi_SE03A_PPB_Tubes_Anterin/Anterin/app/src/main/res/drawable/searchtoko.xml" value="0.240625" />
+        <entry key="..\:/19104031_Rifqi_SE03A_PPB_Tubes_Anterin/Anterin/app/src/main/res/layout/activity_cari_toko.xml" value="0.22447916666666667" />
+        <entry key="..\:/19104031_Rifqi_SE03A_PPB_Tubes_Anterin/Anterin/app/src/main/res/layout/activity_detail_produk.xml" value="0.22447916666666667" />
         <entry key="..\:/19104031_Rifqi_SE03A_PPB_Tubes_Anterin/Anterin/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/19104031_Rifqi_SE03A_PPB_Tubes_Anterin/Anterin/app/src/main/res/layout/activity_pembayaran.xml" value="0.25" />
+        <entry key="..\:/19104031_Rifqi_SE03A_PPB_Tubes_Anterin/Anterin/app/src/main/res/layout/activity_profil.xml" value="0.22447916666666667" />
         <entry key="..\:/19104031_Rifqi_SE03A_PPB_Tubes_Anterin/Anterin/app/src/main/res/layout/activity_promosi.xml" value="0.25" />
         <entry key="..\:/19104031_Rifqi_SE03A_PPB_Tubes_Anterin/Anterin/app/src/main/res/layout/garis_bawah.xml" value="0.21041666666666667" />
       </map>
