@@ -54,7 +54,7 @@
         android:layout_marginTop="25dp"
         app:layout_constraintStart_toStartOf="@+id/tv_harianmu"
         app:layout_constraintTop_toBottomOf="@+id/tv_harianmu"
-        tools:srcCompat="@tools:sample/avatars"/>
+        tools:srcCompat="@drawable/fruit"/>
 
     <TextView
         android:id="@+id/tv_atas"
@@ -88,7 +88,7 @@
         android:layout_marginStart="15dp"
         app:layout_constraintStart_toEndOf="@+id/iv_fruit"
         app:layout_constraintTop_toTopOf="@+id/iv_fruit"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/fruit" />
 
     <TextView
         android:id="@+id/tv_atas2"
@@ -122,7 +122,7 @@
         android:layout_marginStart="15dp"
         app:layout_constraintStart_toEndOf="@+id/iv_fruit2"
         app:layout_constraintTop_toTopOf="@+id/iv_fruit2"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/fruit" />
 
     <TextView
         android:id="@+id/tv_atas3"
@@ -182,15 +182,17 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_rekomendasi" />
 
 <!--    katalog produk 1-->
+
     <ImageView
         android:id="@+id/iv_produk1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_width="120dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
         android:background="@color/white"
         app:layout_constraintStart_toStartOf="@+id/tv_untukmu"
         app:layout_constraintTop_toBottomOf="@+id/tv_untukmu"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/good_mood" />
 
     <TextView
         android:id="@+id/tv_namaProduk1"
@@ -248,15 +250,16 @@
         app:srcCompat="@drawable/free_shipping" />
 
 <!--    kalatog produk 2-->
+
     <ImageView
         android:id="@+id/iv_produk2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_width="120dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="16dp"
         android:background="@color/white"
         app:layout_constraintStart_toStartOf="@+id/iv_produk1"
         app:layout_constraintTop_toBottomOf="@+id/iv_produk1"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/good_mood" />
 
     <TextView
         android:id="@+id/tv_namaProduk2"
@@ -316,13 +319,13 @@
 <!--    katalog produk 3-->
     <ImageView
         android:id="@+id/iv_produk3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="144dp"
         android:layout_marginTop="30dp"
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="@id/search_bar"
         app:layout_constraintTop_toBottomOf="@+id/search_bar"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/good_mood" />
 
     <TextView
         android:id="@+id/tv_namaProduk3"
@@ -382,13 +385,13 @@
 <!--    katalog produk 4-->
     <ImageView
         android:id="@+id/iv_produk4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="144dp"
         android:layout_marginTop="30dp"
         android:background="@color/white"
         app:layout_constraintStart_toStartOf="@+id/iv_produk3"
         app:layout_constraintTop_toBottomOf="@+id/iv_produk3"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/good_mood" />
 
     <TextView
         android:id="@+id/tv_namaProduk4"
@@ -448,13 +451,13 @@
 <!--    katalog produk 5-->
     <ImageView
         android:id="@+id/iv_produk5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="144dp"
         android:layout_marginTop="30dp"
         android:background="@color/white"
         app:layout_constraintStart_toStartOf="@+id/iv_produk4"
         app:layout_constraintTop_toBottomOf="@+id/iv_produk4"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/good_mood" />
 
     <TextView
         android:id="@+id/tv_namaProduk5"
