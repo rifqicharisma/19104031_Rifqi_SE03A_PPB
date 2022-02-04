@@ -10,6 +10,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        produkSatuKlik()
+        searchBarKlik()
+
         val button = findViewById(R.id.iv_produk1)
         button.setOnClickListener{
             val intent = Intent(this, DetailProduk::class.java)
@@ -21,5 +24,15 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, cari_toko::class.java)
             startActivity(intent)
         }
+    }
+
+    fun produkSatuKlik() {
+        val intent = Intent(this, DetailProduk::class.java)
+        startActivity(intent)
+    }
+
+    fun searchBarKlik() {
+        val intent = Intent(this, cari_toko::class.java)
+        startActivity(intent)
     }
 }
